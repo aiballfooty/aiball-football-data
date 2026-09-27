@@ -6,7 +6,7 @@
 > kaedah kerja, peraturan lejar, dan cara anda boleh menyumbang atau membetulkan data kami.
 > Untuk maklumat sahaja. Bukan nasihat. 18+.
 
-AI Ball is a football data site for people who want to see where a number came from.
+AI Ball is AI football match analysis for people who want to see where a number came from.
 Live site: **https://aiball.samagent.ai**
 
 > **This repository contains documentation only. The product source code is not open source.**
@@ -40,8 +40,15 @@ Three things, in order of how much we care about them:
 ## Why we think this is different
 
 Most football prediction sites publish an accuracy figure and no way to verify it. We are doing the
-opposite: **we are not selling you an accuracy number — we are publishing every call before kick-off
-and letting you count.**
+opposite: **we are not selling you an accuracy number — we are publishing every call and letting you
+count.**
+
+One thing we have to be exact about, because it is the whole point of the page. Of the matches on the
+open record today, only those from **21 September 2026** onwards were snapshotted automatically before
+kick-off — 62 of 480 at the time of writing. The earlier 418 were written into the record after the
+fact from the figures stored in our database. They are the same numbers, but they are not
+independently proven to pre-date the match, and we are not going to pretend otherwise. From 21
+September the lock is automatic; the October ledger inherits that guarantee.
 
 Concretely:
 
