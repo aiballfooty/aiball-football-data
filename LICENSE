@@ -1,0 +1,44 @@
+Copyright (c) 2026 AI Ball
+
+The documentation in this repository is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to this
+    repository, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests AI Ball endorses you
+    or your use.
+  - No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing anything
+    the licence permits.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+---
+
+Scope of this licence
+
+This licence covers the text and documentation files in this repository only.
+
+It does NOT cover:
+  - the AI Ball product, its source code, its models or its infrastructure,
+    none of which are published or licensed here;
+  - the underlying football data shown on https://aiball.samagent.ai, which
+    comes from a commercial feed under its own terms and is not ours to
+    relicense;
+  - the AI Ball name, logo and other brand marks.
+
+Why CC BY 4.0 rather than a software licence: everything in this repository
+is prose and specification rather than code. A software licence such as MIT
+is drafted around source, object form and warranty disclaimers, and says
+little that is useful about a document. CC BY says precisely what we mean
+about text — attribution required, derivatives allowed, commercial use
+allowed, no further restrictions — and it travels well: a student quoting our
+ledger rules in a report, a maintainer quoting us in a curated list, or a
+journalist quoting our stated limits is covered without needing to ask us.

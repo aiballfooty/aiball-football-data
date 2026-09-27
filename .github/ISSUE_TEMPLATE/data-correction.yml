@@ -1,0 +1,94 @@
+name: Data correction
+description: Something on the site is wrong — a club name, a fixture, a league label, or a ledger entry.
+title: "[data] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. You do not need to be a developer to file this.
+
+        **Ledger errors get priority over everything else.** If a match is missing from the ledger,
+        recorded wrongly, or shows a snapshot time that doesn't match what we posted, say so in the
+        first box and we will look at it the same day.
+
+        Please don't include anything about betting, picks or staking — we can't act on it and we'll
+        close it.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Ledger entry (missing, wrong result, wrong snapshot time)
+        - Club name — wrong, outdated, or not findable in search
+        - Fixture — wrong kick-off time, wrong round, wrong status
+        - League or competition label
+        - Translation / wording (Malay, Thai, Filipino, English)
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Where did you see it?
+      description: Match page URL, or the ledger page and the date, or the screen name.
+      placeholder: https://aiball.samagent.ai/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What does the site show now?
+      description: Copy the exact text or figure as it appears.
+    validations:
+      required: true
+
+  - type: textarea
+    id: right
+    attributes:
+      label: What should it show instead?
+      description: |
+        If you have a source — a club's own site, a federation page, the competition's fixture list —
+        please link it. We are not asking for proof, it just makes the fix faster.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which interface language were you using?
+      options:
+        - English
+        - Malay / Bahasa Melayu
+        - Thai
+        - Chinese
+        - Not sure
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag an image in here.
+    validations:
+      required: false
+
+  - type: input
+    id: credit
+    attributes:
+      label: How should we credit you, if we ship this?
+      description: A name or handle, or write "no credit" and we'll leave you out of it.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Before you send
+      options:
+        - label: This is one problem. (Separate issues for separate problems, please — it makes them easier to close and easier for you to track.)
+          required: true

@@ -1,0 +1,87 @@
+name: Feature request or method review
+description: Suggest something we should build, or tell us our method or our ledger rules are wrong.
+title: "[idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Two different things share this form, because they arrive the same way.
+
+        **Method review is the one we want most.** If you think our calibration claim is
+        overreaching, our ledger denominator lets us flatter ourselves, or our baseline is too easy —
+        say it plainly. Unhedged criticism is welcome and will get a written reply from whoever owns
+        that part of the method. Background: `docs/methodology.md` and `docs/open-ledger.md`.
+
+        Two things we will close without discussion, so you don't waste your time:
+        anything asking us to recommend a pick or a side, and anything about staking, returns or
+        operators. We're a data site.
+
+        This repository is documentation only — there is no codebase to contribute to. Ideas here
+        become work on the product or on these docs.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this?
+      options:
+        - Method review — something about the model is wrong or overstated
+        - Ledger rules — a way the scoring rules let us flatter ourselves
+        - Feature request — something the site should do
+        - Documentation — something in this repo is unclear or wrong
+        - API need (please use the `[api]` title format described in COLLABORATION.md §6)
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What's the point you're making?
+      description: |
+        For a method review: which claim, and why you think it doesn't hold.
+        For a feature: what you were trying to do when you wanted it.
+      placeholder: |
+        e.g. "Your confidence bands are computed on a sample too small to distinguish them from
+        each other — at n per band of roughly X, the intervals overlap completely."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Anything backing it up?
+      description: |
+        A calculation, a paper, a worked example from our published ledger, a link. Entirely
+        optional — a well-aimed argument with no citation is still worth more to us than a citation
+        with no argument.
+    validations:
+      required: false
+
+  - type: textarea
+    id: instead
+    attributes:
+      label: What would you do instead?
+      description: If you have a better baseline, a better binning, or a better rule, name it.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: who
+    attributes:
+      label: So we can pitch the reply at the right level — what's your background with this?
+      options:
+        - I build or evaluate football models
+        - I work in stats / ML / forecasting generally
+        - I'm a student
+        - I'm a football fan who likes numbers
+        - Prefer not to say
+    validations:
+      required: false
+
+  - type: input
+    id: credit
+    attributes:
+      label: If this changes what we publish, how should we credit you?
+      description: A name or handle, or "no credit".
+    validations:
+      required: false
