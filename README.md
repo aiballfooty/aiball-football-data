@@ -66,18 +66,30 @@ someone trying to talk us out of overclaiming — it was.
 
 ## Screenshots
 
-*(placeholder — images to be produced by our asset team before first publish; do not publish this
-section empty.)*
+Taken from the live site on 1 October 2026. The match is Spain 4–1 Croatia (UEFA Nations League,
+30 Sep, 02:45 MYT).
 
-| File | What it must show | Notes |
-|---|---|---|
-| `docs/img/01-match-page.png` | A single match page in **English**, full height, showing the traceable-number panels (form, H2H, injuries, goal estimate) | English or Malay UI only |
-| `docs/img/02-open-ledger.png` | The open ledger page: snapshot time, model read, result, right/missed, running total, favourite baseline column | Must include at least one visible **miss** |
-| `docs/img/03-number-provenance.png` | Close crop of one figure expanded to show the rows behind it | The whole point of the repo in one image |
-| `docs/img/04-malay-ui.png` | The same match page in Malay | Shows we are not an English-only site |
+**A match page.** The model's figures with the time they were generated (29 Sep, 15:46 MYT, about
+eleven hours before kick-off), then the goal estimate, head-to-head, recent form, injuries and
+fixtures.
 
-Rules for whoever cuts these: English or Malay interface only; no pricing or staking panels anywhere
-in frame; no Chinese UI; annotate in English; 2x resolution, PNG, < 500 KB each.
+![Match page in English](docs/img/01-match-page.png)
+
+**The record page.** For every finished match: when the model's view was locked, what it read, the
+final score, and right or wrong. Misses stay on the page. The running total sits next to what always
+siding with the pre-match favourite would have scored. This is the site's record as it stands today;
+the open-ledger rules below apply from 10 October.
+
+![Record page](docs/img/02-open-ledger.png)
+
+**A figure and the rows behind it.** The head-to-head summary (Spain 4 wins, 2 draws, 2 losses) is
+built from the eight matches listed directly underneath it.
+
+![Head-to-head summary with its rows](docs/img/03-number-provenance.png)
+
+**The same match page in Malay.**
+
+![Match page in Malay](docs/img/04-malay-ui.png)
 
 ## Quick start
 
