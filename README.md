@@ -1,5 +1,20 @@
 # AI Ball — Football data you can check
 
+[![Telegram](https://img.shields.io/badge/Telegram-t.me%2Faiballfooty-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/aiballfooty)
+[![Agent Skill](https://img.shields.io/badge/Agent_Skill-aiballfooty%2Faiball--skills-2F8CFF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aiballfooty/aiball-skills)
+
+> [!TIP]
+> **Daily on Telegram → [t.me/aiballfooty](https://t.me/aiballfooty)**: the model's read on each match before kick-off, and how it went after full time.
+>
+> **Use AI Ball inside your AI assistant** (Claude Code, Codex, Cursor, Gemini CLI, Copilot and other agents that support skills):
+>
+> ```bash
+> npx skills add aiballfooty/aiball-skills
+> ```
+>
+> Plugin installs for Claude Code and Codex: [aiballfooty/aiball-skills](https://github.com/aiballfooty/aiball-skills#install)
+
+
 > **Ringkasan (BM):** AI Ball ialah laman data bola sepak. Kami menyiarkan bacaan model untuk setiap perlawanan
 > **sebelum sepak mula**, kemudian menyemaknya selepas perlawanan dalam lejar terbuka yang sesiapa sahaja boleh kira
 > semula. Setiap nombor di halaman perlawanan boleh dijejaki ke sumbernya. Repo ini mengandungi **dokumentasi sahaja** —
